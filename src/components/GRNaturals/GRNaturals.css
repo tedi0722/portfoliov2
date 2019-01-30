@@ -1,0 +1,29 @@
+.carousel-control.right,
+.carousel-control.left {
+    /* background: white; */
+    background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.0001) 100%);
+}
+
+span.glyphicon.glyphicon-chevron-right,
+span.glyphicon.glyphicon-chevron-left {
+    color: black
+}
+
+.view-site-btn {
+    background: none;
+    padding: 15px 20px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 10px 10px 20px lightgrey;
+    border-radius: 0px;
+    display: block;
+    margin: auto;
+    
+}
+
+.view-site-btn:hover {
+    background: linear-gradient(135deg, #606c88, #3f4c6b);
+    color: #fff;
+    transform: scale(1.03, 1.03);
+    box-shadow: 10px 20px 40px grey;
+    border: none;
+}

@@ -1,0 +1,21 @@
+.view-work-btn {
+    background: none;
+    padding: 15px 20px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 10px 10px 20px lightgrey;
+    border-radius: 0px;
+}
+
+.view-work-btn:hover {
+    background: linear-gradient(135deg, #606c88, #3f4c6b);
+    color: #fff;
+    transform: scale(1.03, 1.03);
+    box-shadow: 10px 20px 40px grey;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .about-wrapper {
+        display: block;
+    }
+}
