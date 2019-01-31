@@ -21,11 +21,12 @@ const Footer = () =>
 
 const styles = {
     socialLinks: {
-        backgroundColor: "#101010",
+        // backgroundColor: "#101010",
+        backgroundColor: "black",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        borderTop: "1px dashed white"
+        // borderTop: "1px dashed white"
     },
     socialLinksI: {
         fontSize: 30,

@@ -1,12 +1,41 @@
+.thumbnail > img {
+    margin-top: 35px;
+    /* padding: 30px 30px 0px; */
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
 .project-card {
-    padding: 20px;
+    /* padding: 20px; */
     transition: 0.3s ease-in-out;
     box-shadow: 10px 10px 20px black;
     text-decoration: none;
+    border: none;
+    background: #000000;
 }
+
 .project-card:hover {
     cursor: pointer;
     transform: scale(1.04, 1.04);
-    box-shadow: 10px 10px 40px #505050;
-    text-decoration: none
+    box-shadow: 5px 5px 30px #888888;
+    text-decoration: none;
+    /* color: white; */
+    border: none;
+}
+
+.textWrapper {
+    color: #888888;
+    transition: 0.3s ease-in-out;
+    padding: 20px;
+    /* border: 1px dotted white; */
+    /* border-top: none */
+}
+
+.textWrapper:hover {
+    color: white;
+    /* color: lightskyblue; */
+}
+
+.thumbnail .caption {
+    padding: 0
 }

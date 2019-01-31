@@ -5,15 +5,17 @@ import { Thumbnail } from 'react-bootstrap';
 import './ProjectCard.css';
 
 const ProjectCard = (props) =>
-    <Thumbnail 
-        componentClass={Link} 
-        href="/" to={props.path} 
-        className="project-card" 
-        src={props.logo} 
-        alt={props.projectName}>
-            <h3 style={styles.projectName} >{props.projectName}</h3>
-            <p style={styles.projectTechnology} >{props.projectTechnology}</p>
-    </Thumbnail>
+            <Thumbnail 
+                componentClass={Link} 
+                href="/" to={props.path} 
+                className="project-card" 
+                src={props.logo} 
+                alt={props.projectName}>
+                <div className="textWrapper">
+                    <h3 style={styles.projectName} >{props.projectName}</h3>
+                    <p style={styles.projectTechnology} >{props.projectTechnology}</p>
+                </div>
+            </Thumbnail>
 
 const styles = {
     projectName: {
