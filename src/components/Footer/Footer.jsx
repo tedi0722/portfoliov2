@@ -1,9 +1,8 @@
 import React from 'react';
 
 const Footer = () =>
-    <footer className="footer">
+    <footer>
         <div style={styles.socialLinks}>
-
             <p style={styles.paragraph}>Follow me on social media:</p>
 
             <a style={styles.socialLinksA} href="https://github.com/tedi0722" target="_blank" rel="noopener noreferrer">
@@ -17,16 +16,16 @@ const Footer = () =>
             <a style={styles.socialLinksA} href="https://www.instagram.com/tsi.jpg/" target="_blank" rel="noopener noreferrer">
                 <i style={styles.socialLinksI} className="fa fa-instagram" aria-hidden="true" />
             </a>
-            
         </div>
     </footer>
 
 const styles = {
     socialLinks: {
-        backgroundColor: "grey",
+        backgroundColor: "#101010",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        borderTop: "1px dashed white"
     },
     socialLinksI: {
         fontSize: 30,

@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+// pages
+import Work from './pages/Work/Work';
+import About from './pages/About/About';
+import GRNaturals from './pages/GRNaturals/GRNaturals';
+// components
 import NavBar from './components/NavBar/NavBar';
-import Work from './components/Work/Work';
-import About from './components/About/About';
-
 import Footer from './components/Footer/Footer';
 
-import GRNaturals from './components/GRNaturals/GRNaturals';
 
 import './App.css';
-
 
 const App = () => 
       <Router basename={process.env.PUBLIC_URL}>

@@ -2,9 +2,10 @@ import React from 'react';
 import { Grid, Row, Col, Button, Carousel } from 'react-bootstrap'
 import GRNHome from '../../assets/GRNHome.jpg';
 import GRNOrder from '../../assets/GRNOrder.jpg';
-import GRNWeatherNews from '../../assets/GRNWeatherNews.jpg'
+import GRNWeatherNews from '../../assets/GRNWeatherNews.jpg';
 
 import './GRNaturals.css';
+import MyNormalButton from '../../components/MyNormalButton/MyNormalButton';
 
 const GRNaturals = () => 
     <div>
@@ -40,7 +41,9 @@ const GRNaturals = () =>
                             <li>PHP</li>
                             <li>Weather & News API</li>
                         </ul>
-                            <Button className="view-site-btn">View Site</Button>
+                            <div style={styles.buttonWrapper}>
+                            <MyNormalButton href="" buttonName="View Site" />
+                            </div>
                     </Col>
                 </Row>
             </Grid>
@@ -58,6 +61,10 @@ const styles = {
         padding: 20,
         minHeight: 'calc(100vh)'
     },
+    buttonWrapper: {
+        display: "flex",
+        justifyContent: "center"
+    }
 }
 
 export default GRNaturals;

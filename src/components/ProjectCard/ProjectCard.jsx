@@ -6,9 +6,8 @@ import './ProjectCard.css';
 
 const ProjectCard = (props) =>
     <Thumbnail 
-        style={styles.projectCard}
         componentClass={Link} 
-        href="/" to={props.route} 
+        href="/" to={props.path} 
         className="project-card" 
         src={props.logo} 
         alt={props.projectName}>
@@ -17,18 +16,12 @@ const ProjectCard = (props) =>
     </Thumbnail>
 
 const styles = {
-    projectCard: {
-        padding: 20,
-        transition: "0.3s ease-in-out",
-        boxShadow: "10px 10px 20px lightgrey",
-        textDecoration: "none"
-    },
     projectName: {
         textAlign: "center"
     },
     projectTechnology: {
         fontFamily: 'Cormorant Garamond',
-        fontSize: 16,
+        fontSize: 18,
         textAlign: "center"
     }
 }

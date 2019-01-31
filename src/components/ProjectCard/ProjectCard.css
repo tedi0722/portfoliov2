@@ -1,5 +1,12 @@
+.project-card {
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 10px 10px 20px black;
+    text-decoration: none;
+}
 .project-card:hover {
     cursor: pointer;
-    transform: scale(1.03, 1.03);
-    box-shadow: 10px 20px 40px grey;
+    transform: scale(1.04, 1.04);
+    box-shadow: 10px 10px 40px #505050;
+    text-decoration: none
 }

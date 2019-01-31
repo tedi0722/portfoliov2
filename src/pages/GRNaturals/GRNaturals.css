@@ -4,10 +4,10 @@
     background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.0001) 100%);
 }
 
-span.glyphicon.glyphicon-chevron-right,
+/* span.glyphicon.glyphicon-chevron-right,
 span.glyphicon.glyphicon-chevron-left {
     color: black
-}
+} */
 
 .view-site-btn {
     background: none;
@@ -20,10 +20,10 @@ span.glyphicon.glyphicon-chevron-left {
     
 }
 
-.view-site-btn:hover {
+/* .view-site-btn:hover {
     background: linear-gradient(135deg, #606c88, #3f4c6b);
     color: #fff;
     transform: scale(1.03, 1.03);
     box-shadow: 10px 20px 40px grey;
     border: none;
-}
+} */
