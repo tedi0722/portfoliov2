@@ -1,20 +1,20 @@
-.button {
+.normalButton {
     text-shadow: none;
     background: none;
     padding: 15px 20px;
-    transition: 0.3s ease-in-out;
-    box-shadow: 5px 5px 20px black;
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 10px black;
     border-radius: 3px;
     background: lightskyblue;
     color: black;
     border: none;
 }
 
-.button:hover {
+.normalButton:hover {
     text-shadow: none;
     background: skyblue;
     color: #fff;
     transform: scale(1.03, 1.03);
-    box-shadow: 5px 5px 40px lightgrey;
+    box-shadow: 5px 5px 30px lightgrey;
     border: none;
 }

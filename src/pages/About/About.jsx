@@ -25,7 +25,7 @@ const About = () =>
                 <p style={styles.paragraph}>I'm a software engineer who wants to help a company grow through building and improving its applications and online presence. I enjoy decomposing and solving complicated problems and I’m always intrigued by the different possibilities and solutions that lies ahead. I am detail oriented and I want to use my skills to ensure a business grows and remains on the cutting edge.</p>
                 <p style={styles.paragraph}>When I'm not working, I love being outdoors, going on road trips, and shooting landscape photos.</p>
                 <p style={styles.paragraph}>I am a hard worker and consider myself a lifelong learner. I’m confident that I’ll be able to contribute positively and I’m excited about what the future holds for my career.</p>
-                <p style={styles.paragraph}>If you'd like to learn more about me, feel free to reach out on <Link style={styles.link} to="/Contact">contact page</Link>.</p>
+                <p style={styles.paragraph}>If you'd like to learn more about me, feel free to reach out on the <Link style={styles.link} to="/Contact">contact page</Link>.</p>
             </Col>
         </Row>
 
@@ -61,9 +61,11 @@ const styles = {
     bioWrapper: {
         padding: 20,
         marginRight: 20,
-        fontSize: 18
     },
     paragraph: {
+        fontSize: 16,
+        fontFamily: 'Cormorant Garamond',
+        letterSpacing: 1.1,
         marginBottom: 30
     },
     link: {

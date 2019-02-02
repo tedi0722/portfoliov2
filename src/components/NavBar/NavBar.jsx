@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { TedLogo } from '../../assets/Ted_logo_v3.jpg';
 import './NavBar.css';
 
 export default class NavBar extends Component {

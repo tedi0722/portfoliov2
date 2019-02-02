@@ -1,0 +1,36 @@
+.pdfButtonWrapper {
+    width: 960px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pdfButton {
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 10px black;
+    color: white;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    background: white;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.pdfButton:hover {
+    cursor: pointer;
+    transform: scale(1.02, 1.02);
+    box-shadow: 0px 0px 20px white;
+}
+
+.pdfButtonText {
+    margin: 5px 3px 0px 5px;
+    color: #101010;
+    font-size: 14px;
+}
+
+.pdfButtonIcon {
+    color: #101010;
+    font-size: 24px;
+    padding: 5px;
+}
