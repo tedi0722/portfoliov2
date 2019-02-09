@@ -8,14 +8,24 @@ import PDFButton from '../../components/PDFButton/PDFButton';
 import pdf from '../../assets/pdf-test.pdf';
 
 const Resume = () =>
-    <QueueAnim duration={500} animConfig={{translateX: [0, 100], opacity:[1,0]}}>
+    <QueueAnim duration={500} animConfig={{ translateX: [0, 100], opacity: [1, 0] }}>
         <div key="1" style={styles.page}>
-            <PDFButton href={pdf} />
+            <PDFButton />
             {/* ....................................................................................... */}
             <Grid>
-                <Row>
+                <Row style={{ minHeight: "40px", display: "flex", alignItems: "center" }}>
                     <Col xs={12}>
-                        <h2 style={styles.h2}>Resume</h2>
+                        <QueueAnim
+                            style={{ display: "flex", justifyContent: "center" }}
+                            delay={500}
+                            animConfig={{ opacity: [1, 0] }}>
+                            <h2 key="1" style={styles.h2}>R</h2>
+                            <h2 key="2" style={styles.h2}>e</h2>
+                            <h2 key="3" style={styles.h2}>s</h2>
+                            <h2 key="4" style={styles.h2}>u</h2>
+                            <h2 key="5" style={styles.h2}>m</h2>
+                            <h2 key="6" style={styles.h2}>e</h2>
+                        </QueueAnim>
                     </Col>
                 </Row>
             </Grid>
@@ -153,6 +163,49 @@ const Resume = () =>
                         <h4 style={styles.h4}>Programming</h4>
                     </Col>
                 </Row>
+                <Row>
+                    <Col xs={12} lg={3} style={styles.skillscol}>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                            <li>WordPress</li>
+                        </ul>
+                    </Col>
+                    <Col xs={12} lg={3} style={styles.skillscol}>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                            <li>React.js</li>
+                            <li>React Native</li>
+                        </ul>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={12}>
+                        <h4 style={styles.h4}>Others</h4>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={12} lg={3} style={styles.skillscol}>
+                        <ul>
+                            <li>Microsoft Word</li>
+                            <li>Microsoft PowerPoint</li>
+                            <li>Microsoft Excel</li>
+                        </ul>
+                    </Col>
+                    <Col xs={12} lg={3} style={styles.skillscol}>
+                        <ul>
+                            <li>Adobe Photoshop</li>
+                            <li>Adobe Lightroom</li>
+                        </ul>
+
+                    </Col>
+                </Row>
                 {/* ......................................................................................... */}
                 <Row>
                     <Col xs={12} style={styles.h3col}>
@@ -202,18 +255,19 @@ const styles = {
         background: "#1a1a1a",
         border: "1px solid lightgrey",
         borderRadius: 5,
-        width: 960,
+        // width: 960,
         padding: "50px 70px",
+        marginTop: 50,
         marginBottom: 100
     },
     h2: {
         textAlign: "center",
-        margin: "0px 0px 30px"
+        margin: 0
     },
     h3: {
         margin: 0,
         // textIndent: 20,
-        textShadow: "0px 0px 2px"
+        textShadow: "0px 0px 1px"
     },
     h3col: {
         borderBottom: "0.5px dashed lightgrey",
@@ -234,6 +288,9 @@ const styles = {
         fontSize: 16,
         textIndent: 0,
     },
+    skillscol: {
+        padding: 10
+    }
 }
 
 export default Resume

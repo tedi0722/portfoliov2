@@ -1,5 +1,29 @@
-@media (max-width: 768px) {
-    .about-wrapper {
+.jumbotron {
+    height: 200px;
+    background: #1a1a1a;
+    border: 1px solid lightgrey;
+    padding: 40px;
+}
+
+.animWrapper {
+    width: 50%;
+    margin: auto;
+    float: none;
+}
+
+.aboutWrapper {
+    min-height: calc(100vh);
+}
+
+@media (max-width: 1170px) {
+    .bioWwrapper {
         display: block;
+    }
+    .jumbotron {
+        width: 100%;
+        height: 100%;
+    }
+    .animWrapper {
+        width: 100%;
     }
 }

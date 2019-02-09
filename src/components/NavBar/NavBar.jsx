@@ -3,7 +3,6 @@ import { Navbar, Nav, NavItem, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import QueueAnim from 'rc-queue-anim';
 // assets
-import { TedLogo } from '../../assets/Ted_logo_v3.png';
 import './NavBar.css';
 
 export default class NavBar extends Component {
@@ -18,7 +17,6 @@ export default class NavBar extends Component {
                                 animConfig={{ opacity: [1, 0] }}
                                 duration={1000}
                             >
-                                <img src={TedLogo} />
                                 <p key="1">T</p><p key="2">e</p><p key="3">d</p>&nbsp;<p key="4">I</p>
                             </QueueAnim>
                         </Link>
