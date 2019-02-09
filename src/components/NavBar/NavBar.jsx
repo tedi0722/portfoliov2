@@ -10,7 +10,7 @@ export default class NavBar extends Component {
             <Navbar default collapseOnSelect className="myNav">
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to="/">Ted I</Link>
+                        <Link to="/">ECHOME</Link>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>

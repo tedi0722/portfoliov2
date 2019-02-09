@@ -35,14 +35,22 @@ const GRNaturals = () =>
             <Row style={styles.row}>
                 <Col xs={12}>
                     <p style={styles.infoParagraph}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        GingerRed Naturals is a small business located in Red Lodge, Montana. 
+                        The company sells organic products locally such as 
+                        lip balms, salves, lotions, essential oil blends, and bath products. 
+                    </p>
+                    <p style={styles.infoParagraph}>
+                        The client wanted a CMS (Content Management System) 
+                        that allows her to post updates and sell products easily. 
+                        However, she didn’t want to implement a shopping API 
+                        since she preferred communicating with her customers through purchases. 
+                    </p>
+                    <p style={styles.infoParagraph}>
+                        We chose WordPress as the CMS and used JavaScript to implement an Order Form. 
+                        The customers are now able to view the products and click on a button 
+                        to save the ones they wish to purchase. 
+                        The Order Form will display each product that the customers saved, 
+                        along with any additional messages they wish to send. 
                     </p>
                 </Col>
             </Row>

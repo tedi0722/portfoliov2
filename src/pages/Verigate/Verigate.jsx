@@ -6,6 +6,8 @@ import MyNormalButton from '../../components/MyNormalButton/MyNormalButton';
 import VerigateLogin from '../../assets/VerigateLogin.jpg';
 import VerigateDevice from '../../assets/VerigateDevice.jpg';
 import VerigateAdmin from '../../assets/VerigateAdmin.jpg';
+import NodeRedDiagram from '../../assets/NodeRedDiagram.jpg';
+import NodeRedFunctions from '../../assets/NodeRedFunctions.jpg';
 import './Verigate.css';
 
 const Verigate = () =>
@@ -22,6 +24,12 @@ const Verigate = () =>
             <Carousel.Item>
                 <img style={styles.image} width={900} height={500} alt="900x500" src={VerigateAdmin} />
             </Carousel.Item>
+            <Carousel.Item>
+                <img style={styles.image} width={900} height={500} alt="900x500" src={NodeRedDiagram} />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img style={styles.image} width={900} height={500} alt="900x500" src={NodeRedFunctions} />
+            </Carousel.Item>
         </Carousel>
 
         <Grid style={styles.infoWrapper} >
@@ -36,14 +44,17 @@ const Verigate = () =>
             <Row style={styles.row}>
                 <Col xs={12}>
                     <p style={styles.infoParagraph}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Verigate is a full stack IoT (Internet of Things) application 
+                        that allows user to register, login, and control a relay switch 
+                        that could be implemented into devices such as garage gates and lights. 
+                    </p>
+                    <p style={styles.infoParagraph}>
+                        Verigate uses MySQL as the database management system, 
+                        which acts as a center point between the application and the IoT device. 
+                        An <a style={styles.link} href="https://www.arduino.cc/en/guide/introduction" target="blank">Arduino</a> board 
+                        is connected to the IoT device, which is then programmed to connect to MySQL database. 
+                        Lastly, we implemented <a style={styles.link} href="https://nodered.org/" target="blank">Node-RED</a> which 
+                        allows users to connect multiple devices to the application. 
                     </p>
                 </Col>
             </Row>
@@ -66,6 +77,8 @@ const Verigate = () =>
                             <li>HandleBars</li>
                             <li>NodeJS</li>
                             <li>Express</li>
+                            <li>PassportJS</li>
+                            <li>bcrypt</li>
                             <li>Arduino</li>
                             <li>Node-RED</li>
                         </ul>
@@ -166,6 +179,10 @@ const styles = {
     //     fontSize: 18,
     //     margin: 0
     // }
+    link: {
+        color: "lightskyblue",
+        fontSize: 20
+    }
 }
 
 export default Verigate;

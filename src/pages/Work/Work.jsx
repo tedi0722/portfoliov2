@@ -16,7 +16,7 @@ const Work = () =>
                 <ProjectCard path="/GingerRedNaturals" logo={GRNLogo} gif={GRNGif} projectName="GingerRed Naturals" projectTechnology="WordPress" />
             </Col>
             <Col xs={12} md={4}>
-                <ProjectCard path="/Verigate" logo={VerigateLogo} gif={VerigateGif} projectName="Verigate" projectTechnology="Full Stack Application / Express" />
+                <ProjectCard path="/Verigate" logo={VerigateLogo} gif={VerigateGif} projectName="Verigate" projectTechnology="Express / IoT" />
             </Col>
             <Col xs={12} md={4}>
                 <ProjectCard path="/BattleTactics" logo={patrick} gif={patrick} projectName="Battle Tactics" projectTechnology="React Native" />
