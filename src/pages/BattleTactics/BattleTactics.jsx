@@ -4,59 +4,111 @@ import { Grid, Row, Col, Button, Carousel } from 'react-bootstrap'
 import './BattleTactics.css';
 import MyNormalButton from '../../components/MyNormalButton/MyNormalButton';
 
-const BattleTactics = () => 
+const BattleTactics = () =>
     <div>
-        <h2 style={styles.title}>Battle Tactics</h2>
+        <h2 style={styles.title}>GingerRed Naturals</h2>
 
-            <Carousel>
-                {/* <Carousel.Item>
-                    <img style={styles.image} width={900} height={500} alt="900x500" src={ GRNHome } />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img style={styles.image} width={900} height={500} alt="900x500" src={ GRNOrder } />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img style={styles.image} width={900} height={500} alt="900x500" src={ GRNWeatherNews } />
-                </Carousel.Item> */}
-            </Carousel>
+        <Carousel>
+            {/* <Carousel.Item>
+                <img style={styles.image} width={900} height={500} alt="900x500" src={GRNHome} />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img style={styles.image} width={900} height={500} alt="900x500" src={GRNOrder} />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img style={styles.image} width={900} height={500} alt="900x500" src={GRNWeatherNews} />
+            </Carousel.Item> */}
+        </Carousel>
 
-            <Grid style={styles.info} >
-                <Row>
-                    <Col xs={12}>
-                        <h3>About This Project</h3>
-                            <hr></hr>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <br></br>
-                        <h3>Technologies Involved</h3>
-                            <hr></hr>
+        <Grid style={styles.infoWrapper} >
+
+            <Row>
+                <Col xs={12}>
+                    <h3 style={styles.infoTitle}>About This Project</h3>
+                    <hr></hr>
+                </Col>
+            </Row>
+
+            <Row style={styles.row}>
+                <Col xs={12}>
+                    <p style={styles.infoParagraph}>
+                        PROJECT IN PROGRESS
+                    </p>
+                    <p style={styles.infoParagraph}>
+                        
+                    </p>
+                    <p style={styles.infoParagraph}>
+                        
+                    </p>
+                </Col>
+            </Row>
+
+            <Row>
+                <Col xs={12}>
+                    <h3 style={styles.infoTitle}>Technologies Involved</h3>
+                    <hr></hr>
+
+                </Col>
+            </Row>
+
+            <Row style={styles.row}>
+                <Col xs={12}>
+                    <div style={styles.technologies}>
                         <ul>
                             <li>React Native</li>
                             <li>Native Base</li>
                         </ul>
-                            <div style={styles.buttonWrapper}>
-                            <MyNormalButton href="" buttonName="View Site" />
-                            </div>
-                    </Col>
-                </Row>
-            </Grid>
+                    </div>
+                </Col>
+            </Row>
+
+            <Row>
+                <Col xs={12}>
+                    <div style={styles.buttonWrapper}>
+                        <MyNormalButton href="" buttonName="View Site" />
+                    </div>
+                </Col>
+            </Row>
+        </Grid>
     </div>
 
 const styles = {
     title: {
         textAlign: "center",
-        marginBottom: 30
+        margin: 30
     },
     image: {
         margin: "auto"
     },
-    info: {
-        padding: 20,
+    infoWrapper: {
+        padding: 50,
         minHeight: 'calc(100vh)'
+    },
+    row: {
+        margin: "0px 0px 30px"
+    },
+    infoTitle: {
+        textIndent: 30
+    },
+    infoParagraph: {
+        fontFamily: 'Cormorant Garamond',
+        letterSpacing: 1.1,
+        lineHeight: 1.5,
+        fontSize: 16,
+        textIndent: 30,
+        margin: "10px 0",
+    },
+    technologies: {
+        fontFamily: 'Cormorant Garamond',
+        letterSpacing: 1.1,
+        lineHeight: 1.5,
+        fontSize: 16,
     },
     buttonWrapper: {
         display: "flex",
-        justifyContent: "center"
-    }
+        justifyContent: "center",
+        margin: 20,
+    },
 }
 
 export default BattleTactics;

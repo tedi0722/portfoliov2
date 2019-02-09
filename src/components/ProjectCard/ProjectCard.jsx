@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Thumbnail } from 'react-bootstrap';
-
+import QueueAnim from 'rc-queue-anim';
+// assets
 import './ProjectCard.css';
+
 
 class ProjectCard extends Component {
     constructor(props) {
         super(props);
         this.handleMouseHover = this.handleMouseHover.bind(this);
         this.state = {
-            hover: false
+            hover: false,
+            key: 0
         }
     }
 
@@ -19,7 +22,7 @@ class ProjectCard extends Component {
 
     toggleHoverState(state) {
         return {
-            hover: !state.hover
+            hover: !state.hover,
         }
     }
 
@@ -27,10 +30,10 @@ class ProjectCard extends Component {
 
         let thumbnail;
 
-        if (!this.state.hover) {
-            thumbnail = this.props.logo
-        } else {
+        if (this.state.hover) {
             thumbnail = this.props.gif
+        } else {
+            thumbnail = this.props.logo
         }
 
         return (

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import QueueAnim from 'rc-queue-anim';
+// assets
 import { TedLogo } from '../../assets/Ted_logo_v3.jpg';
 import './NavBar.css';
 
@@ -8,7 +10,7 @@ export default class NavBar extends Component {
     render () {
         return (
             <Navbar default collapseOnSelect className="myNav">
-                <Navbar.Header>
+                <Navbar.Header key="1">
                     <Navbar.Brand>
                         <Link to="/">ECHOME</Link>
                     </Navbar.Brand>
@@ -17,10 +19,10 @@ export default class NavBar extends Component {
                 <Navbar.Collapse>
                     <div>
                     <Nav pullRight>
-                        <NavItem eventKey={1} componentClass={Link} className="tab" href="/" to="/">
+                        <NavItem key="2" eventKey={1} componentClass={Link} className="tab" href="/" to="/">
                             Work
                         </NavItem>
-                        <NavItem eventKey={2} componentClass={Link} className="tab" href="/" to="/About">
+                        <NavItem key="3" eventKey={2} componentClass={Link} className="tab" href="/" to="/About">
                             About
                         </NavItem>
                         <NavItem eventKey={3} componentClass={Link} className="tab" href="/" to="/Resume">

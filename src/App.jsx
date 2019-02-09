@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import QueueAnim from 'rc-queue-anim';
 // pages
 import Work from './pages/Work/Work';
 import About from './pages/About/About';
@@ -17,7 +18,9 @@ import './App.css';
 const App = () => 
       <Router basename={process.env.PUBLIC_URL}>
         <div>
-          <NavBar />
+          <QueueAnim animConfig={{translateX: [0, 100], opacity:[1,0]}}>
+            <NavBar key="1"/>
+          </QueueAnim>
           <Route exact path="/" component={Work} />
           <Route path="/About" component={About} />
           <Route path="/Resume" component={Resume} />

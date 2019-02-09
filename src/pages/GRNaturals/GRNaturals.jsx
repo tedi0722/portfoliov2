@@ -56,7 +56,7 @@ const GRNaturals = () =>
             </Row>
 
             <Row>
-                <Col sx={12}>
+                <Col xs={12}>
                     <h3 style={styles.infoTitle}>Technologies Involved</h3>
                     <hr></hr>
 
