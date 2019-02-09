@@ -33,7 +33,7 @@ a.email:hover {
     background: none;
     padding: 15px 20px;
     margin-top: 30px;
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
     box-shadow: 5px 5px 10px black;
     border-radius: 3px;
     background: lightskyblue;
@@ -44,7 +44,7 @@ a.email:hover {
 .sendButton:hover {
     text-shadow: none;
     background: skyblue;
-    color: #fff;
+    color: white;
     transform: scale(1.03, 1.03);
     box-shadow: 5px 5px 30px lightgrey;
     border: none;

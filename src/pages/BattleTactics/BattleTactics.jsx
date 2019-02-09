@@ -1,11 +1,15 @@
 import React from 'react';
-import { Grid, Row, Col, Button, Carousel } from 'react-bootstrap'
+import { Grid, Row, Col, Button, Carousel } from 'react-bootstrap';
+import QueueAnim from 'rc-queue-anim';
 
 import './BattleTactics.css';
 import MyNormalButton from '../../components/MyNormalButton/MyNormalButton';
 
 const BattleTactics = () =>
-    <div>
+<QueueAnim duration={500} animConfig={{ opacity: [1, 0] }}>
+
+
+    <div key="1">
         <h2 style={styles.title}>GingerRed Naturals</h2>
 
         <Carousel>
@@ -71,6 +75,7 @@ const BattleTactics = () =>
             </Row>
         </Grid>
     </div>
+</QueueAnim>
 
 const styles = {
     title: {

@@ -13,7 +13,7 @@ import VerigateGif from '../../assets/VerigateGif.gif';
 const Work = () => 
     <Grid style={styles.wrapper}>
         <Row>
-            <QueueAnim animConfig={{translateX: [0, 100], opacity:[1,0]}}>
+            <QueueAnim duration={500} animConfig={{translateX: [0, 100], opacity:[1,0]}}>
                 <Col key="1" xs={12} md={4}>
                     <ProjectCard path="/GingerRedNaturals" logo={GRNLogo} gif={GRNGif} projectName="GingerRed Naturals" projectTechnology="WordPress" />
                 </Col>

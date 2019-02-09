@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Thumbnail } from 'react-bootstrap';
-import QueueAnim from 'rc-queue-anim';
 // assets
 import './ProjectCard.css';
-
 
 class ProjectCard extends Component {
     constructor(props) {
@@ -51,14 +49,6 @@ class ProjectCard extends Component {
                     <p style={styles.projectTechnology} >{this.props.projectTechnology}</p>
                 </div>
             </Thumbnail>
-
-            // <div>
-            //     <div onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover}>
-            //         {thumbnail}
-            //     </div>
-            // </div>
-
-
         )
     }
 }

@@ -34,12 +34,12 @@ const styles = {
         padding: 10
     },
     socialLinksA: {
-        color: "white"
+        color: "lightgrey"
     },
     paragraph: {
         margin: 0,
         padding: "10px 5px 5px 5px",
-        color: "white",
+        color: "lightgrey",
         letterSpacing: 1.1
     }
 }

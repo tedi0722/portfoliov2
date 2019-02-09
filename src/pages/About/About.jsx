@@ -11,61 +11,182 @@ import './About.css'
 
 const About = () =>
     <Grid>
-        <QueueAnim animConfig={{ translateX: [0, 100], opacity: [1, 0] }}>
-            <Jumbotron key="1" style={styles.jumbotron} className="text-center">
-                <QueueAnim>
-                    <h2 key="2" style={styles.h2}>Hello, I'm Ted,</h2>
-                    <h2 key="3" style={styles.h2}>software engineer.</h2>
-                    <h2 key="4" style={styles.h2}>Nice to meet you!</h2>
-                    <br></br>
-                    <div key="5">
-                        <MyButton path="/" buttonName="View Work" />
-                    </div>
-                </QueueAnim>
-            </Jumbotron>
-                <Row key="1" style={styles.aboutWrapper} className="show-grid text-center about-wrapper">
-                    <Col key="1" xs={12} md={4} style={styles.profilePicWrapper}>
-                        <Image circle style={styles.profilePic} src={ProfilePic} />
-                    </Col>
+        <Row>
+            <Col xs={12}>
+                <QueueAnim duration={500} animConfig={{ translateX: [0, 100], opacity: [1, 0] }}>
+                    <Jumbotron key="1" style={styles.jumbotron} className="text-center">
+                        <Row>
+                            <Col xs={12}>
+                                <QueueAnim
+                                    style={styles.h2queueanim}
+                                    interval={10}
+                                    duration={500}
+                                    delay={500}
+                                    animConfig={{ opacity: [1, 0] }}
+                                >
+                                    <h2 style={styles.h2} key="1">H</h2>
+                                    <h2 style={styles.h2} key="2">e</h2>
+                                    <h2 style={styles.h2} key="3">l</h2>
+                                    <h2 style={styles.h2} key="4">l</h2>
+                                    <h2 style={styles.h2} key="5">o</h2>
+                                    <h2 style={styles.h2} key="6">!&nbsp;</h2>
+                                    <h2 style={styles.h2} key="7">M</h2>
+                                    <h2 style={styles.h2} key="8">y&nbsp;</h2>
+                                    <h2 style={styles.h2} key="9">n</h2>
+                                    <h2 style={styles.h2} key="10">a</h2>
+                                    <h2 style={styles.h2} key="11">m</h2>
+                                    <h2 style={styles.h2} key="12">e&nbsp;</h2>
+                                    <h2 style={styles.h2} key="13">i</h2>
+                                    <h2 style={styles.h2} key="14">s&nbsp;</h2>
+                                    <h2 style={styles.h2} key="15">T</h2>
+                                    <h2 style={styles.h2} key="16">e</h2>
+                                    <h2 style={styles.h2} key="17">d</h2>
+                                    <h2 style={styles.h2} key="18">,</h2>
+                                </QueueAnim>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col xs={12}>
+                                <QueueAnim
+                                    style={styles.h2queueanim}
+                                    interval={10}
+                                    duration={500}
+                                    delay={700}
+                                    animConfig={{ opacity: [1, 0] }}
+                                >
+                                    <h2 style={styles.h2} key="1">s</h2>
+                                    <h2 style={styles.h2} key="2">o</h2>
+                                    <h2 style={styles.h2} key="3">f</h2>
+                                    <h2 style={styles.h2} key="4">t</h2>
+                                    <h2 style={styles.h2} key="5">w</h2>
+                                    <h2 style={styles.h2} key="6">a</h2>
+                                    <h2 style={styles.h2} key="7">r</h2>
+                                    <h2 style={styles.h2} key="8">e&nbsp;</h2>
+                                    <h2 style={styles.h2} key="9">d</h2>
+                                    <h2 style={styles.h2} key="10">e</h2>
+                                    <h2 style={styles.h2} key="11">v</h2>
+                                    <h2 style={styles.h2} key="12">e</h2>
+                                    <h2 style={styles.h2} key="13">l</h2>
+                                    <h2 style={styles.h2} key="14">o</h2>
+                                    <h2 style={styles.h2} key="15">p</h2>
+                                    <h2 style={styles.h2} key="16">e</h2>
+                                    <h2 style={styles.h2} key="17">r</h2>
+                                    <h2 style={styles.h2} key="18">.</h2>
+                                </QueueAnim>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col xs={12}>
+                                <QueueAnim
+                                    style={styles.h2queueanim}
+                                    interval={10}
+                                    duration={500}
+                                    delay={900}
+                                    animConfig={{ opacity: [1, 0] }}
+                                >
+                                    <h2 style={styles.h2} key="1">N</h2>
+                                    <h2 style={styles.h2} key="2">i</h2>
+                                    <h2 style={styles.h2} key="3">c</h2>
+                                    <h2 style={styles.h2} key="4">e&nbsp;</h2>
+                                    <h2 style={styles.h2} key="5">t</h2>
+                                    <h2 style={styles.h2} key="6">o&nbsp;</h2>
+                                    <h2 style={styles.h2} key="7">m</h2>
+                                    <h2 style={styles.h2} key="8">e</h2>
+                                    <h2 style={styles.h2} key="9">e</h2>
+                                    <h2 style={styles.h2} key="10">t&nbsp;</h2>
+                                    <h2 style={styles.h2} key="11">y</h2>
+                                    <h2 style={styles.h2} key="12">o</h2>
+                                    <h2 style={styles.h2} key="13">u</h2>
+                                    <h2 style={styles.h2} key="14">!</h2>
+                                </QueueAnim>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col xs={12}>
+                                <QueueAnim
+                                    interval={10}
+                                    duration={500}
+                                    delay={1100}
+                                    animConfig={{ translateX: [0, 50], opacity: [1, 0] }}
+                                >
+                                    <div style={styles.viewWorkButton} key="1">
+                                        <MyButton path="/" buttonName="View Work" />
+                                    </div>
+                                </QueueAnim>
+                            </Col>
+                        </Row>
 
-                    <Col key="2" xs={12} md={8} style={styles.bioWrapper}>
-                        <p style={styles.paragraph}>
-                            I'm a software engineer who wants to help a company grow
-                            through building and improving its applications and online presence.
-                            I enjoy decomposing and solving complicated problems and I’m always intrigued
-                            by the different possibilities and solutions that lies ahead.
-                            I am detail oriented and I want to use my skills to ensure
-                        a business grows and remains on the cutting edge.</p>
-                        <p style={styles.paragraph}>
-                            When I'm not working, I love being outdoors, going on road trips, and shooting landscape photos.
-                    </p>
-                        <p style={styles.paragraph}>
-                            I am a hard worker and consider myself a lifelong learner.
-                            I’m confident that I’ll be able to contribute positively and I’m excited
-                            about what the future holds for my career.
-                    </p>
-                        <p style={styles.paragraph}>
-                            If you'd like to learn more about me,
-                        feel free to reach out on the <Link style={styles.link} to="/Contact">contact page</Link>.
-                    </p>
-                    </Col>
-                </Row>
-        </QueueAnim>
+                    </Jumbotron>
+                </QueueAnim>
+            </Col>
+        </Row>
+
+        <Row style={styles.aboutWrapper} className="about-wrapper">
+            <Col xs={12} md={4} style={styles.profilePicWrapper}>
+                <QueueAnim
+                    type="scale"
+                    duration="1000"
+                    animConfig={{ scale: [1, 0.1], opacity: [1, 0] }}
+                >
+                    <Image key="1" circle style={styles.profilePic} src={ProfilePic} />
+                </QueueAnim>
+            </Col>
+
+            <Col xs={12} md={8} style={styles.bioWrapper}>
+                <QueueAnim
+                    duration="500"
+                    animConfig={{ translateX: [0, 100], opacity: [1, 0] }}
+                >
+                    <p key="1" style={styles.paragraph}>
+                        I'm a software engineer who wants to help a company grow
+                        through building and improving its applications and online presence.
+                        I enjoy decomposing and solving complicated problems and I’m always intrigued
+                        by the different possibilities and solutions that lies ahead.
+                        I am detail oriented and I want to use my skills to ensure
+                        a business grows and remains on the cutting edge.
+                            </p>
+                    <p key="2" style={styles.paragraph}>
+                        When I'm not working, I love being outdoors, going on road trips, and shooting landscape photos.
+                            </p>
+                    <p key="3" style={styles.paragraph}>
+                        I am a hard worker and consider myself a lifelong learner.
+                        I’m confident that I’ll be able to contribute positively and I’m excited
+                        about what the future holds for my career.
+                            </p>
+                    <p key="4" style={styles.paragraph}>
+                        If you'd like to learn more about me,
+                                feel free to reach out on the <Link style={styles.link} to="/Contact">contact page</Link>.
+                            </p>
+                </QueueAnim>
+            </Col>
+        </Row>
     </Grid>
 
 const styles = {
     jumbotron: {
-        textAlign: "center",
-        background: "#101010",
+        background: "#1a1a1a",
         border: "1px solid lightgrey",
         height: 300,
         paddingTop: 40,
-        marginBottom: 80
+        marginBottom: 50,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center"
 
     },
     h2: {
-        margin: 10,
-        fontSize: 30
+        margin: 0,
+        color: "lightgrey"
+        // marginTop: "10px 0px",
+        // fontSize: 30
+    },
+    h2queueanim: {
+        display: "flex",
+        justifyContent: "center",
+        padding: 8
+    },
+    viewWorkButton: {
+        margin: 20
     },
     profilePicWrapper: {
         padding: 20
@@ -73,7 +194,7 @@ const styles = {
     profilePic: {
         width: 300,
         padding: 7,
-        border: "1px dashed"
+        border: "1px dashed lightgrey"
     },
     aboutWrapper: {
         display: "flex",
@@ -83,12 +204,18 @@ const styles = {
     bioWrapper: {
         padding: 20,
         marginRight: 20,
+        // display: "flex",
+        // justifyContent: "center",
+        // alignItems: "center"
     },
     paragraph: {
         fontSize: 16,
         fontFamily: 'Cormorant Garamond',
         letterSpacing: 1.1,
+        lineHeight: 1.5,
+        textIndent: 30,
         marginBottom: 30
+        
     },
     link: {
         color: "lightskyblue",

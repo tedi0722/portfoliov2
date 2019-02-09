@@ -6,13 +6,13 @@
 }
 
 .pdfButton {
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
     box-shadow: 5px 5px 10px black;
-    color: white;
+    /* color: white; */
     display: flex;
     align-items: center;
-    border: 1px solid white;
-    background: white;
+    /* border: 1px solid white; */
+    background: lightgrey;
     border-radius: 3px;
     padding: 2px;
 }
@@ -20,7 +20,7 @@
 .pdfButton:hover {
     cursor: pointer;
     transform: scale(1.02, 1.02);
-    background: white;
+    background: lightgrey;
     box-shadow: 0px 0px 20px white;
 }
 

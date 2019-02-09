@@ -18,7 +18,7 @@ import './App.css';
 const App = () => 
       <Router basename={process.env.PUBLIC_URL}>
         <div>
-          <QueueAnim animConfig={{translateX: [0, 100], opacity:[1,0]}}>
+          <QueueAnim duration="2000" animConfig={{opacity:[1,0]}}>
             <NavBar key="1"/>
           </QueueAnim>
           <Route exact path="/" component={Work} />
