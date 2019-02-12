@@ -5,12 +5,14 @@ import QueueAnim from 'rc-queue-anim';
 // components 
 import PDFButton from '../../components/PDFButton/PDFButton';
 // assets
-import pdf from '../../assets/pdf-test.pdf';
+// import pdf from '../../assets/pdf-test.pdf';
+import pdf from '../../assets/TedSI.pdf';
+
 
 const Resume = () =>
     <QueueAnim duration={500} animConfig={{ translateX: [0, 100], opacity: [1, 0] }}>
         <div key="1" style={styles.page}>
-            <PDFButton />
+            <PDFButton href={pdf} />
             {/* ....................................................................................... */}
             <Grid>
                 <Row style={{ minHeight: "40px", display: "flex", alignItems: "center" }}>
@@ -42,10 +44,10 @@ const Resume = () =>
                         <h4 style={styles.h4}>Back-end Developer | <Link to="/Verigate" style={styles.link}>Verigate</Link> | 2018</h4>
                         <ul style={styles.workDescription}>
                             <li>
-
+                                Involved in implementing user authentication for the application
                             </li>
                             <li style={styles.workDescription}>
-
+                                Involved in creating an IoT device that connects to the application
                             </li>
                         </ul>
                     </Col>
@@ -55,10 +57,10 @@ const Resume = () =>
                         <h4 style={styles.h4}>Front-end Developer | <Link to="/GingerRedNaturals" style={styles.link}>GingerRed Naturals</Link> | 2018</h4>
                         <ul style={styles.workDescription}>
                             <li>
-
+                                Involved in designing the UX/UI of the WordPress site
                             </li>
                             <li style={styles.workDescription}>
-
+                                Involved in implementing new features with JavaScript
                             </li>
                         </ul>
                     </Col>
