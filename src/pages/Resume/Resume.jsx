@@ -167,7 +167,7 @@ const Resume = () =>
                 </Row>
                 <Row>
                     <Col xs={12} lg={3} style={styles.skillscol}>
-                        <ul>
+                        <ul style={styles.workDescription}>
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>Bootstrap</li>
@@ -177,7 +177,7 @@ const Resume = () =>
                         </ul>
                     </Col>
                     <Col xs={12} lg={3} style={styles.skillscol}>
-                        <ul>
+                        <ul style={styles.workDescription}>
                             <li>Node.js</li>
                             <li>Express.js</li>
                             <li>MySQL</li>
@@ -194,14 +194,14 @@ const Resume = () =>
                 </Row>
                 <Row>
                     <Col xs={12} lg={3} style={styles.skillscol}>
-                        <ul>
+                        <ul style={styles.workDescription}>
                             <li>Microsoft Word</li>
                             <li>Microsoft PowerPoint</li>
                             <li>Microsoft Excel</li>
                         </ul>
                     </Col>
                     <Col xs={12} lg={3} style={styles.skillscol}>
-                        <ul>
+                        <ul style={styles.workDescription}>
                             <li>Adobe Photoshop</li>
                             <li>Adobe Lightroom</li>
                         </ul>
