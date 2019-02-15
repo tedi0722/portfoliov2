@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portfoliov2/static/media/GRNHome.7fa9a751.jpg"
   },
   {
-    "revision": "96613a53287a0fe95991",
+    "revision": "d693233d660229d076c6",
     "url": "/portfoliov2/static/css/main.dd9dfe51.chunk.css"
   },
   {
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/portfoliov2/static/media/ProfilePic.2f597b52.JPG"
   },
   {
-    "revision": "96613a53287a0fe95991",
-    "url": "/portfoliov2/static/js/main.96613a53.chunk.js"
+    "revision": "d693233d660229d076c6",
+    "url": "/portfoliov2/static/js/main.d693233d.chunk.js"
   },
   {
     "revision": "83e375fe95e02ae443a5a8ac9099d39a",
@@ -76,7 +76,7 @@ self.__precacheManifest = [
     "url": "/portfoliov2/static/media/TedSI.6afa7672.pdf"
   },
   {
-    "revision": "dda9108ad47398cc76ef6f58d8068dfd",
+    "revision": "847c7ab5b4eab8dc99dc116f7fe66cab",
     "url": "/portfoliov2/index.html"
   }
 ];
