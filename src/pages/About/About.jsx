@@ -53,7 +53,7 @@ const About = () =>
                                             delay={700}
                                             animConfig={{ opacity: [1, 0] }}
                                         >
-                                            <h2 style={styles.h2} key="1">s</h2>
+                                            <h2 style={styles.h2} key="1">S</h2>
                                             <h2 style={styles.h2} key="2">o</h2>
                                             <h2 style={styles.h2} key="3">f</h2>
                                             <h2 style={styles.h2} key="4">t</h2>
@@ -61,16 +61,14 @@ const About = () =>
                                             <h2 style={styles.h2} key="6">a</h2>
                                             <h2 style={styles.h2} key="7">r</h2>
                                             <h2 style={styles.h2} key="8">e&nbsp;</h2>
-                                            <h2 style={styles.h2} key="9">d</h2>
-                                            <h2 style={styles.h2} key="10">e</h2>
-                                            <h2 style={styles.h2} key="11">v</h2>
-                                            <h2 style={styles.h2} key="12">e</h2>
-                                            <h2 style={styles.h2} key="13">l</h2>
-                                            <h2 style={styles.h2} key="14">o</h2>
-                                            <h2 style={styles.h2} key="15">p</h2>
-                                            <h2 style={styles.h2} key="16">e</h2>
-                                            <h2 style={styles.h2} key="17">r</h2>
-                                            <h2 style={styles.h2} key="18">.</h2>
+                                            <h2 style={styles.h2} key="9">E</h2>
+                                            <h2 style={styles.h2} key="10">n</h2>
+                                            <h2 style={styles.h2} key="11">g</h2>
+                                            <h2 style={styles.h2} key="12">i</h2>
+                                            <h2 style={styles.h2} key="13">n</h2>
+                                            <h2 style={styles.h2} key="14">e</h2>
+                                            <h2 style={styles.h2} key="15">e</h2>
+                                            <h2 style={styles.h2} key="16">r.</h2>
                                         </QueueAnim>
                                         <QueueAnim
                                             style={styles.h2queueanim}
@@ -133,7 +131,7 @@ const About = () =>
                     animConfig={{ translateX: [0, 100], opacity: [1, 0] }}
                 >
                     <p key="1" style={styles.paragraph}>
-                        I'm a software developer who wants to help a company grow
+                        I'm a software engineer who wants to help a company grow
                         through building and improving its applications and online presence.
                         I enjoy decomposing and solving complicated problems and I’m always intrigued
                         by the different possibilities and solutions that lies ahead.
