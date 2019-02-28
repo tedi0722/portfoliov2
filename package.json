@@ -2,7 +2,7 @@
   "name": "portfolio-v2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://tedi0722.github.io/portfoliov2/",
+  "homepage": "http://ted-i.com",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "rc-queue-anim": "^1.6.11",
