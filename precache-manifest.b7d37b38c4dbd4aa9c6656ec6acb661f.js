@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portfoliov2/static/media/VerigateAdmin.4cbefd32.jpg"
   },
   {
-    "revision": "8a892deb71da477ea7e7",
+    "revision": "96b0fc13376313bf725e",
     "url": "/portfoliov2/static/css/main.7de5996b.chunk.css"
   },
   {
@@ -52,8 +52,8 @@ self.__precacheManifest = [
     "url": "/portfoliov2/static/media/VerigateDevice.f96b0191.jpg"
   },
   {
-    "revision": "8a892deb71da477ea7e7",
-    "url": "/portfoliov2/static/js/main.8a892deb.chunk.js"
+    "revision": "96b0fc13376313bf725e",
+    "url": "/portfoliov2/static/js/main.96b0fc13.chunk.js"
   },
   {
     "revision": "18f7c001246594330739357df89eb1bf",
@@ -104,7 +104,7 @@ self.__precacheManifest = [
     "url": "/portfoliov2/static/media/VerigateLogo.debea872.jpg"
   },
   {
-    "revision": "2fbb76a1a0323f652b50a6f48da6c50e",
+    "revision": "47b5c2442123f32dff710c0c002e9cda",
     "url": "/portfoliov2/index.html"
   }
 ];
