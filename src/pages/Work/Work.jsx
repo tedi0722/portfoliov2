@@ -15,13 +15,28 @@ const Work = () =>
         <Row>
             <QueueAnim duration={500} animConfig={{translateX: [0, 100], opacity:[1,0]}}>
                 <Col key="1" xs={12} md={4}>
-                    <ProjectCard path="/GingerRedNaturals" logo={GRNLogo} gif={GRNGif} projectName="GingerRed Naturals" projectTechnology="WordPress" />
+                    <ProjectCard 
+                    path="/GingerRedNaturals" 
+                    logo={GRNGif} 
+                    // gif={GRNGif} 
+                    projectName="GingerRed Naturals" 
+                    projectTechnology="WordPress" />
                 </Col>
                 <Col key="2" xs={12} md={4}>
-                    <ProjectCard path="/Verigate" logo={VerigateLogo} gif={VerigateGif} projectName="Verigate" projectTechnology="Express / IoT" />
+                    <ProjectCard 
+                    path="/Verigate" 
+                    logo={VerigateGif} 
+                    // gif={VerigateGif} 
+                    projectName="Verigate" 
+                    projectTechnology="Express / IoT" />
                 </Col>
                 <Col key="3" xs={12} md={4}>
-                    <ProjectCard path="/BattleTactics" logo={patrick} gif={patrick} projectName="Battle Tactics" projectTechnology="React Native" />
+                    <ProjectCard 
+                    path="/BattleTactics" 
+                    logo={patrick} 
+                    gif={patrick} 
+                    projectName="Battle Tactics" 
+                    projectTechnology="React Native" />
                 </Col>
             </QueueAnim>
         </Row>

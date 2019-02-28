@@ -10,7 +10,7 @@ class ProjectCard extends Component {
         this.handleMouseHover = this.handleMouseHover.bind(this);
         this.state = {
             hover: false,
-            key: 0
+            
         }
     }
 
@@ -21,6 +21,7 @@ class ProjectCard extends Component {
     toggleHoverState(state) {
         return {
             hover: !state.hover,
+            font: "lightgrey"
         }
     }
 
@@ -34,6 +35,17 @@ class ProjectCard extends Component {
             thumbnail = this.props.logo
         }
 
+        let projectNameStyle;
+        let projectTechnologyStyle;
+        if (this.state.hover) {
+            projectNameStyle = styles.projectNameHover
+            projectTechnologyStyle = styles.projectTechnologyHover
+
+        } else {
+            projectNameStyle = styles.projectName
+            projectTechnologyStyle = styles.projectTechnology
+        }
+
         return (
             <Thumbnail
                 onMouseEnter={this.handleMouseHover}
@@ -41,12 +53,12 @@ class ProjectCard extends Component {
                 componentClass={Link}
                 href="/" to={this.props.path}
                 className="project-card"
-                // src={this.props.logo} 
-                src={thumbnail}
+                src={this.props.logo} 
+                // src={thumbnail}
                 alt={this.props.projectName}>
                 <div className="textWrapper">
-                    <h3 style={styles.projectName} >{this.props.projectName}</h3>
-                    <p style={styles.projectTechnology} >{this.props.projectTechnology}</p>
+                    <h3 style={projectNameStyle} >{this.props.projectName}</h3>
+                    <p style={projectTechnologyStyle} >{this.props.projectTechnology}</p>
                 </div>
             </Thumbnail>
         )
@@ -55,13 +67,26 @@ class ProjectCard extends Component {
 
 const styles = {
     projectName: {
-        textAlign: "center"
+        textAlign: "center",
+        color: "#888888"
+    },
+    projectNameHover: {
+        textAlign: "center",
+        color: "lightgrey"
     },
     projectTechnology: {
         fontFamily: 'Cormorant Garamond',
         fontSize: 18,
         letterSpacing: 1.1,
-        textAlign: "center"
+        textAlign: "center",
+        color: "#888888"
+    },
+    projectTechnologyHover: {
+        fontFamily: 'Cormorant Garamond',
+        fontSize: 18,
+        letterSpacing: 1.1,
+        textAlign: "center",
+        color: "lightgrey"
     }
 }
 

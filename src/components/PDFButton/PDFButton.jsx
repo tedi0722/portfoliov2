@@ -7,7 +7,7 @@ const PDFButton = (props) =>
         <Row>
             <Col xs={12}>
                 <div className="pdfButtonWrapper">
-                    <Button className="pdfButton" href={props.href} download>
+                    <Button className="pdfButton" href={props.href} download="Ted_S_I">
                         <p className="pdfButtonText">Download PDF</p>
                         <i className="fa fa-arrow-circle-down pdfButtonIcon" />
                     </Button>

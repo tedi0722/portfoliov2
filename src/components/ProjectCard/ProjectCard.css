@@ -23,14 +23,14 @@
 }
 
 .textWrapper {
-    color: #888888;
+    /* color: #888888; */
     transition: 0.2s ease-in-out;
     padding: 20px;
 }
 
-.textWrapper:hover {
+/* .textWrapper:hover {
     color: lightgrey;
-}
+} */
 
 .thumbnail .caption {
     padding: 0

@@ -10,7 +10,7 @@ const BattleTactics = () =>
 
 
     <div key="1">
-        <h2 style={styles.title}>GingerRed Naturals</h2>
+        <h2 style={styles.title}>Battle Tactics</h2>
 
         <Carousel>
             {/* <Carousel.Item>
@@ -36,13 +36,40 @@ const BattleTactics = () =>
             <Row style={styles.row}>
                 <Col xs={12}>
                     <p style={styles.infoParagraph}>
-                        PROJECT IN PROGRESS
+                        Battle Tactics is a mobile application built with React Native that serves the purpose of a strategy planner
+                        for the popular miniature wargame <a style={styles.link} href="https://warhammer40000.com/" target="blank">Warhammer 40,000</a>.
                     </p>
                     <p style={styles.infoParagraph}>
-                        
+                        The client requested several features: 
+                    </p>
+                    <ul style={styles.infoParagraph}>
+                        <li>
+                            Ability to select maps, terrains, factions, units, and deployment
+                        </li>
+                        <li>
+                            Ability to drag and drop objects as units on the map for battle formation
+                        </li>
+                        <li>
+                            Ability to update and save data from the BattleScrive API, 
+                            which contains detailed information of each faction and units
+                        </li>
+                        <li>
+                            Ability to display information of each unit as modal pop-ups
+                        </li>
+                    </ul>
+                    <p style={styles.infoParagraph}>
+                        We used the React Native "fetch" method to grab information from the BattleScribe API, the data is then 
+                        stored into the AsyncStorage. The amount of data was enormous, so we decided to implement the Context API. 
+                        Context allowed us to modularize our application by keeping all our states in one single file, 
+                        which made passing values between components easier.
                     </p>
                     <p style={styles.infoParagraph}>
-                        
+                        The PanResponder API helped us create draggable components. It tracks the user's gestures which allowed us to
+                        create additional features such as pinch-zooming and double-tapping.
+                    </p>
+                    <p style={styles.infoParagraph}>
+                        Lastly, we created helper functions in the Context to set different states, the functions is then called from 
+                        different components depending on their interaction with states.
                     </p>
                 </Col>
             </Row>
@@ -61,6 +88,8 @@ const BattleTactics = () =>
                         <ul>
                             <li>React Native</li>
                             <li>Native Base</li>
+                            <li>Context API</li>
+                            <li>AsyncStorage API</li>
                         </ul>
                     </div>
                 </Col>
@@ -69,7 +98,7 @@ const BattleTactics = () =>
             <Row>
                 <Col xs={12}>
                     <div style={styles.buttonWrapper}>
-                        <MyNormalButton href="" buttonName="View Site" />
+                        <MyNormalButton href="https://github.com/MrStevenNg/Battle-Tactics.git" target="blank" buttonName="View on Github" />
                     </div>
                 </Col>
             </Row>
@@ -114,6 +143,10 @@ const styles = {
         justifyContent: "center",
         margin: 20,
     },
+    link: {
+        color: "lightskyblue",
+        fontSize: 20
+    }
 }
 
 export default BattleTactics;
