@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/media/VerigateAdmin.4cbefd32.jpg"
   },
   {
-    "revision": "23f63a86f9809c335799",
+    "revision": "c3870778e73db871a902",
     "url": "/static/css/main.7de5996b.chunk.css"
   },
   {
-    "revision": "bede742871b7d62002be",
-    "url": "/static/js/1.bede7428.chunk.js"
+    "revision": "5b2f9259ccdc7fef8ef7",
+    "url": "/static/js/1.5b2f9259.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -52,8 +52,8 @@ self.__precacheManifest = [
     "url": "/static/media/VerigateDevice.f96b0191.jpg"
   },
   {
-    "revision": "23f63a86f9809c335799",
-    "url": "/static/js/main.23f63a86.chunk.js"
+    "revision": "c3870778e73db871a902",
+    "url": "/static/js/main.c3870778.chunk.js"
   },
   {
     "revision": "18f7c001246594330739357df89eb1bf",
@@ -104,7 +104,7 @@ self.__precacheManifest = [
     "url": "/static/media/VerigateLogo.debea872.jpg"
   },
   {
-    "revision": "8545072ccb095b9c1eea10b42ef94f88",
+    "revision": "fc6161ff604129860e865935e723ac5f",
     "url": "/index.html"
   }
 ];
