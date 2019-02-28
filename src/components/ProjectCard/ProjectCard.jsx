@@ -48,6 +48,7 @@ class ProjectCard extends Component {
 
         return (
             <Thumbnail
+                // style={{width: 300}}
                 onMouseEnter={this.handleMouseHover}
                 onMouseLeave={this.handleMouseHover}
                 componentClass={Link}

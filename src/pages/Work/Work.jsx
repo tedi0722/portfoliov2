@@ -6,9 +6,10 @@ import ProjectCard from '../../components/ProjectCard/ProjectCard';
 // assets
 import GRNLogo from '../../assets/GRNLogo.jpg';
 import VerigateLogo from '../../assets/VerigateLogo.jpg';
-import patrick from '../../assets/patrick1.gif';
+// import patrick from '../../assets/patrick1.gif';
 import GRNGif from '../../assets/GRNGif.gif';
 import VerigateGif from '../../assets/VerigateGif.gif';
+import BattleTacticsGif from '../../assets/BattleTacticsGif.gif';
 
 const Work = () => 
     <Grid style={styles.wrapper}>
@@ -16,11 +17,11 @@ const Work = () =>
             <QueueAnim duration={500} animConfig={{translateX: [0, 100], opacity:[1,0]}}>
                 <Col key="1" xs={12} md={4}>
                     <ProjectCard 
-                    path="/GingerRedNaturals" 
-                    logo={GRNGif} 
-                    // gif={GRNGif} 
-                    projectName="GingerRed Naturals" 
-                    projectTechnology="WordPress" />
+                    path="/BattleTactics" 
+                    logo={BattleTacticsGif} 
+                    // gif={BattleTacticsGif} 
+                    projectName="Battle Tactics" 
+                    projectTechnology="React Native" />
                 </Col>
                 <Col key="2" xs={12} md={4}>
                     <ProjectCard 
@@ -32,11 +33,11 @@ const Work = () =>
                 </Col>
                 <Col key="3" xs={12} md={4}>
                     <ProjectCard 
-                    path="/BattleTactics" 
-                    logo={patrick} 
-                    gif={patrick} 
-                    projectName="Battle Tactics" 
-                    projectTechnology="React Native" />
+                    path="/GingerRedNaturals" 
+                    logo={GRNGif} 
+                    // gif={GRNGif} 
+                    projectName="GingerRed Naturals" 
+                    projectTechnology="WordPress" />
                 </Col>
             </QueueAnim>
         </Row>

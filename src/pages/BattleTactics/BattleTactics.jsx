@@ -1,9 +1,15 @@
 import React from 'react';
 import { Grid, Row, Col, Button, Carousel } from 'react-bootstrap';
 import QueueAnim from 'rc-queue-anim';
-
 import './BattleTactics.css';
 import MyNormalButton from '../../components/MyNormalButton/MyNormalButton';
+import BTHome from '../../assets/BTHome.jpg';
+import BTMap from '../../assets/BTMap.jpg';
+import BTTerrain from '../../assets/BTTerrain.jpg';
+import BTFaction from '../../assets/BTFaction.jpg';
+import BTUnit from '../../assets/BTUnit.jpg';
+import BTDeployment from '../../assets/BTDeployment.jpg';
+import BTGame from '../../assets/BTGame.jpg';
 
 const BattleTactics = () =>
 <QueueAnim duration={500} animConfig={{ opacity: [1, 0] }}>
@@ -13,15 +19,27 @@ const BattleTactics = () =>
         <h2 style={styles.title}>Battle Tactics</h2>
 
         <Carousel>
-            {/* <Carousel.Item>
-                <img style={styles.image} width={900} height={500} alt="900x500" src={GRNHome} />
+            <Carousel.Item>
+                <img style={styles.image} width={900} height={500} alt="900x500" src={BTHome} />
             </Carousel.Item>
             <Carousel.Item>
-                <img style={styles.image} width={900} height={500} alt="900x500" src={GRNOrder} />
+                <img style={styles.image} width={900} height={500} alt="900x500" src={BTMap} />
             </Carousel.Item>
             <Carousel.Item>
-                <img style={styles.image} width={900} height={500} alt="900x500" src={GRNWeatherNews} />
-            </Carousel.Item> */}
+                <img style={styles.image} width={900} height={500} alt="900x500" src={BTTerrain} />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img style={styles.image} width={900} height={500} alt="900x500" src={BTFaction} />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img style={styles.image} width={900} height={500} alt="900x500" src={BTUnit} />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img style={styles.image} width={900} height={500} alt="900x500" src={BTDeployment} />
+            </Carousel.Item>
+            <Carousel.Item>
+                <img style={styles.image} width={900} height={500} alt="900x500" src={BTGame} />
+            </Carousel.Item>
         </Carousel>
 
         <Grid style={styles.infoWrapper} >
